@@ -4,7 +4,6 @@ public class ProyectoParqueadero {
 
      public static void main (String[] args) {
 
-          String nombre;
           String placa;
           int vehiculo;
           int carro=1;
@@ -12,28 +11,24 @@ public class ProyectoParqueadero {
           double horaentrada,salida,resta,mult;
 
 
+
           JOptionPane.showMessageDialog(null,"parqueadero plata o plomo \n"  +
                   "valor hora o fraccion \n" +
                   "carro: 2000______________moto: 1000\n");
 
-
-
-          nombre = JOptionPane.showInputDialog("ingrese su nombre");
-
+          String [] Pcarro=new String[10];
           placa = JOptionPane.showInputDialog("ingrese la placa de su vehiculo");
+
 
           horaentrada = Double.parseDouble(JOptionPane.showInputDialog("ingrese la hora de entrada del vehiculo"));
 
 
-         JOptionPane.showMessageDialog(null,"el nombre del cliente es: " + nombre + "\n" +
-                                                                   "la placa del vehiculo es: " + placa + "\n"+
+         JOptionPane.showMessageDialog(null, "la placa del vehiculo es: " + placa + "\n"+
                                                     "la hora de entrada del vehiculo fue: " +horaentrada+"\n");
 
 
          JOptionPane.showMessageDialog(null,"parqueadero plata o plomo \n"  +
-                 "valor hora o fraccion \n" +
-                 "carro: 2000______________moto: 1000\n" + "el nombre del cliente es: " + nombre + "\n" +
-                 "la placa del vehiculo es: " + placa + "\n"+
+                 "valor hora o fraccion \n" + "carro: 2000______________moto: 1000\n" + "la placa del vehiculo es: " + placa + "\n"+
                  "la hora de entrada del vehiculo fue: " +horaentrada+"\n");
 
 
@@ -71,17 +66,16 @@ public class ProyectoParqueadero {
 
                  JOptionPane.showMessageDialog(null, "parqueadero plata o plomo \n" +
                          "valor hora o fraccion \n" +
-                         "carro: 2000______________moto: 1000\n" + "el nombre del cliente es: " + nombre + "\n" +
-                         "la placa del vehiculo es: " + placa + "\n" +
-                         "la hora de entrada del vehiculo fue: " + horaentrada + "\n" +
-                         "lahora de salida es: " + salida + "\n" +
+                         "carro: 2000______________moto: 1000\n" + "la placa del vehiculo es: " + placa + "\n");
+                         JOptionPane.showMessageDialog(null,   "la hora de entrada del vehiculo fue: " + horaentrada + "\n");
+
+                 JOptionPane.showMessageDialog(null,"lahora de salida es: " + salida + "\n");
                          "el valor a pagar es: $" + mult + "\n");
                  break;
              case 2: mult = Math.ceil(resta) * 1000;
                  JOptionPane.showMessageDialog(null, "parqueadero plata o plomo \n" +
                          "valor hora o fraccion \n" +
-                         "carro: 2000______________moto: 1000\n" + "el nombre del cliente es: " + nombre + "\n" +
-                         "la placa del vehiculo es: " + placa + "\n" +
+                         "carro: 2000______________moto: 1000\n" + "la placa del vehiculo es: " + placa + "\n" +
                          "la hora de entrada del vehiculo fue: " + horaentrada + "\n" +
                          "lahora de salida es: " + salida + "\n" +
                          "el valor a pagar es: $" + mult + "\n");
